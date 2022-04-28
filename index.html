@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Review</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="inputs">
+            <div class="group">
+                <label for="txtFirstName">FirstName</label>
+                <input type="text" id="txtFirstName" placeholder="Required" autocomplete="off" class="control">
+            </div>
+            <div class="group">
+                <label for="txtLastName">LastName</label>
+                <input type="text" id="txtLastName" placeholder="Required" autocomplete="off" class="control">
+            </div>
+            <div class="group">
+                <label for="txtAge">Age</label>
+                <input type="text" id="txtAge" placeholder="Required" autocomplete="off" class="control">
+            </div>
+            <div class="group">
+                <label for="txtDescription">Description</label>
+                <textarea id="txtDescription" style="resize: none;" cols="30" rows="10" class="control"></textarea>
+            </div>
+            <div class="btnContainer">
+                <button class="btn" id="add">Ekle</button>
+            </div>
+        </div>
+        <div class="records"></div>
+    </div>
+</body>
+<template id="cardTemplate">
+    <div class="card">
+        <div class="imgDiv">
+            <img src="img/male.jpg" alt="">
+        </div>
+        <div class="content">
+            <div class="table">
+                <table>
+                    <tr>
+                        <td class="property"><b>FirstName :</b></td>
+                        <td id="firstName" class="value"></td>
+                    </tr>
+                    <tr>
+                        <td class="property"><b>LastName :</b></td>
+                        <td id="lastName" class="value"></td>
+                    </tr>
+                    <tr>
+                        <td class="property"><b>Age :</b></td>
+                        <td id="age" class="value"></td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <p id="description"></p>
+            </div>
+        </div>
+    </div>
+</template>
+<script src="js/main.js"></script>
+
+</html>
